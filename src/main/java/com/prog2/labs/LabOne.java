@@ -73,7 +73,7 @@ public class LabOne {
 		 boolean lowercase = false;
 		 boolean digit = false; 
 	        
-		 	for (int p = 0; p < password.length(); p++) {
+		 for (int p = 0; p < password.length(); p++) {
 	            if (Character.isUpperCase(password.charAt(p))) {
 	            	uppercase = true; 
 	            }
