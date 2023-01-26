@@ -22,7 +22,7 @@ public class LabOne {
 	 * @param firstString first input string.
 	 * @param secondString second input string.
 	 *
-	 * @return result concatenated string.
+	 * @return result concatenated string
 	 */
 	
 	public String concatStringToEnd(String firstString, String secondString) {
