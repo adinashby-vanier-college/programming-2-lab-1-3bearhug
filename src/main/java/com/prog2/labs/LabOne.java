@@ -24,7 +24,7 @@ public class LabOne {
 	 */
 	
 	public String concatStringToEnd(String firstString, String secondString) {
-		return "";
+		return firstString +" " +secondString;
 	}
 	
 	/**
