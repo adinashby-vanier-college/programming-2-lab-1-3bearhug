@@ -11,7 +11,9 @@ public class LabOne {
 	 *
 	 */
 	public static void main(String[] args) {
-		
+		//System.out.println(concatStringToEnd("A", "B"));
+		//System.out.println(doesEndWithSecondString("pineapple", "apple"));
+		//System.out.println(isPasswordValid("aBc123"));
 	}
 	
 	/**
@@ -39,7 +41,8 @@ public class LabOne {
 	 */
 	
 	public boolean doesEndWithSecondString(String firstString, String secondString) {
-		return false;
+		
+		return firstString.endsWith(secondString);
 	}
 	
 	/**
@@ -52,7 +55,8 @@ public class LabOne {
 	 */
 	
 	public int randomIntegerGenerator(int startingNumber, int endingNumber) {
-		return 0;
+		 return (int) ((Math.random() * (endingNumber - startingNumber)) + startingNumber);
+		
 	}
 	
 	/**
@@ -65,7 +69,34 @@ public class LabOne {
 	 */
 	
 	public boolean isPasswordValid(String password) {
-		return false;
+		 boolean uppercase = false;
+		 boolean lowercase = false;
+		 boolean digit = false; 
+	        
+		 	for (int p = 0; p < password.length(); p++) {
+	            if (Character.isUpperCase(password.charAt(p))) {
+	            	uppercase = true; 
+	            }
+	        }
+	        for (int q = 0; q < password.length(); q++) {
+	            if (Character.isLowerCase(password.charAt(q))) {
+	            	lowercase = true; 
+	            }
+	        }
+	        for (int i = 0; i < password.length(); i++) {
+	            if (Character.isDigit(password.charAt(i))) {
+	            	digit = true; 
+	            }
+	        }
+	        if(uppercase == true && lowercase == true && digit == true)
+	        {
+	        	return true; 
+	        }
+	        else
+	        {
+				return false; 
+			}
+		
 	}
 
 }
