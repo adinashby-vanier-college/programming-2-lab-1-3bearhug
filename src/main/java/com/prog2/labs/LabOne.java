@@ -7,7 +7,7 @@ package com.prog2.labs;
 public class LabOne {
 
 	/**
-	 * Write your test code below in the main.
+	 * Write your test code below in the main. GIT PULL TEST
 	 *
 	 */
 	public static void main(String[] args) {
