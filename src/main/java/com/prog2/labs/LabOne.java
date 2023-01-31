@@ -21,6 +21,7 @@ public class LabOne {
 //		System.out.println(isPasswordValid("Vanier1"));
 //		System.out.println(isPasswordValid("vanier1"));
 //		System.out.println(isPasswordValid("3bearhug"));
+//		System.out.println(isPasswordValid("imReallyConfusing"));
 
 	}
 	
