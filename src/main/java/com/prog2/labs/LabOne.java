@@ -11,9 +11,16 @@ public class LabOne {
 	 *
 	 */
 	public static void main(String[] args) {
-		//System.out.println(concatStringToEnd("A", "B"));
-		//System.out.println(doesEndWithSecondString("pineapple", "apple"));
-		//System.out.println(isPasswordValid("aBc123"));
+//		System.out.println(concatStringToEnd("Programming 2", "Winter 2022")); // worked
+//		System.out.println(doesEndWithSecondString("pineapple", "apple")); //true
+//		System.out.println(doesEndWithSecondString("java Lab", "ab"));//true
+//		System.out.println(doesEndWithSecondString("java Lab", "Ab"));//true
+//		System.out.println(doesEndWithSecondString("Winter 2022", "35"));//false
+		System.out.println(randomIntegerGenerator(5, 25));
+//		System.out.println(isPasswordValid("aBcDeF123"));
+//		System.out.println(isPasswordValid("Vanier1"));
+//		System.out.println(isPasswordValid("vanier1"));
+//		System.out.println(isPasswordValid("Vanier1234"));
 	}
 	
 	/**
@@ -41,8 +48,10 @@ public class LabOne {
 	 */
 	
 	public boolean doesEndWithSecondString(String firstString, String secondString) {
-		
+		firstString = firstString.toLowerCase();
+		secondString = secondString.toLowerCase(); 
 		return firstString.endsWith(secondString);
+		
 	}
 	
 	/**
@@ -54,9 +63,9 @@ public class LabOne {
 	 * @return result randomly generated number within a range.
 	 */
 	
-	public int randomIntegerGenerator(int startingNumber, int endingNumber) {
+	static int randomIntegerGenerator(int startingNumber, int endingNumber) {
 		 return (int) ((Math.random() * (endingNumber - startingNumber)) + startingNumber);
-		
+		 
 	}
 	
 	/**
@@ -72,14 +81,19 @@ public class LabOne {
 		 boolean uppercase = false;
 		 boolean lowercase = false;
 		 boolean digit = false; 
+		 
 	        
-		 for (int p = 0; p < password.length(); p++) {
+		 if (password.length() < 8) {
+		        return false;
+		    } else
+		    {
+		    for (int p = 0; p < password.length(); p++) {
 	            if (Character.isUpperCase(password.charAt(p))) {
 	            	uppercase = true; 
 	            }
 	        }
-	        for (int q = 0; q < password.length(); q++) {
-	            if (Character.isLowerCase(password.charAt(q))) {
+	        for (int a = 0; a < password.length(); a++) {
+	            if (Character.isLowerCase(password.charAt(a))) {
 	            	lowercase = true; 
 	            }
 	        }
@@ -88,15 +102,18 @@ public class LabOne {
 	            	digit = true; 
 	            }
 	        }
+	       
 	        if(uppercase == true && lowercase == true && digit == true)
 	        {
-	        	return true; 
+	        return true; 
 	        }
 	        else
 	        {
 			return false; 
-		}
+	        }
 		
-	}
+		}
 
+	}
 }
+
