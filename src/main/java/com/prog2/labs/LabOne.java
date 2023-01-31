@@ -16,11 +16,12 @@ public class LabOne {
 //		System.out.println(doesEndWithSecondString("java Lab", "ab"));//true
 //		System.out.println(doesEndWithSecondString("java Lab", "Ab"));//true
 //		System.out.println(doesEndWithSecondString("Winter 2022", "35"));//false
-		System.out.println(randomIntegerGenerator(5, 25));
+//		System.out.println(randomIntegerGenerator(5, 25));
 //		System.out.println(isPasswordValid("aBcDeF123"));
 //		System.out.println(isPasswordValid("Vanier1"));
 //		System.out.println(isPasswordValid("vanier1"));
-//		System.out.println(isPasswordValid("Vanier1234"));
+//		System.out.println(isPasswordValid("3bearhug"));
+
 	}
 	
 	/**
@@ -63,7 +64,7 @@ public class LabOne {
 	 * @return result randomly generated number within a range.
 	 */
 	
-	static int randomIntegerGenerator(int startingNumber, int endingNumber) {
+	public int randomIntegerGenerator(int startingNumber, int endingNumber) {
 		 return (int) ((Math.random() * (endingNumber - startingNumber)) + startingNumber);
 		 
 	}
